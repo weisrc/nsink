@@ -20,7 +20,7 @@ func (s Server) SetClient(ip string, ids []string) {
 	}
 }
 
-func (s Server) GetClientStats(ip string) *Client {
+func (s Server) GetClient(ip string) *Client {
 	if client, ok := s.Clients[ip]; ok {
 		return &client
 	}
